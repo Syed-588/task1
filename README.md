@@ -1,4 +1,4 @@
-# Gemini Chatbot with Sentence Embeddings
+# Gemini Chatbot with History Logging, Sentence Embeddings & Similarity Check
 
 ## 🔹 Features
 
