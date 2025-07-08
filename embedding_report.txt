@@ -17,7 +17,7 @@ How I Used It in My Project
 When the user types a message:
 1. The chatbot saves the message to a file called chat_history.txt
 2. It gets all previous user messages from that file
-3. It changes all those messages, and the new one, into vectors (lists of numbers)
+3. It changes all those messages, and the new one, into lists of numbers
 4. It compares the new message to the old ones using cosine similarity
 5. It shows the similarity score in the chatbot
 
