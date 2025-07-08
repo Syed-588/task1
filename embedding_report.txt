@@ -1,0 +1,36 @@
+Embedding & Similarity Report
+
+What are Sentence Embeddings?
+
+Sentence embeddings turn a sentence into numbers so a computer can understand and compare them. These numbers represent the meaning of the sentence.
+
+In this project, I used a model called "all-MiniLM-L6-v2" from a library called Sentence-Transformers. It changes each sentence into a list of numbers.
+
+ What is Cosine Similarity?
+
+Cosine similarity is a way to compare two sentences (as vectors). It gives a number between:
+- 1.0 (very similar)
+- 0.0 (not similar at all)
+
+How I Used It in My Project
+
+When the user types a message:
+1. The chatbot saves the message to a file called chat_history.txt
+2. It gets all previous user messages from that file
+3. It changes all those messages, and the new one, into vectors (lists of numbers)
+4. It compares the new message to the old ones using cosine similarity
+5. It shows the similarity score in the chatbot
+
+Example:
+
+You: Hello  
+Gemini: Hi there! How can I help you today?  
+(Similarity to earlier messages: 1.00)
+
+You: Tell me a joke  
+Gemini: Why don't scientists trust atoms? Because they make up everything!  
+(Similarity to earlier messages: 0.23)
+
+Why This Is Useful
+
+This helps the bot know if you're saying something similar to what you said before. It's a simple way to make the bot a little smarter.
